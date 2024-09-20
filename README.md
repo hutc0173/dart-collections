@@ -1,2 +1,7 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+# Dart Console Application
+
+This is a simple Dart Console App that demonstrates lists and Map.
+
+## Getting start
+
+-Dart run

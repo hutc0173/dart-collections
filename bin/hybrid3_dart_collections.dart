@@ -57,4 +57,17 @@ void main() {
   students.sort("email");
   print("\nList sorted by last email:");
   students.output();
+
+  Map<String, String> addPerson = {
+    "first": "Sammy",
+    "last": "Hutchinson",
+    "email": "sammy@gmail.com"
+  };
+  students.plus(addPerson);
+  print("\nA new student is added to the list:");
+  students.output();
+
+  students.remove("Adesh");
+  print("\nRemoved from the list:");
+  students.output();
 }

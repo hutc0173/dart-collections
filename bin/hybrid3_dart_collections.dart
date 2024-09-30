@@ -1,6 +1,4 @@
 import 'dart:convert';
-import 'package:hybrid3_dart_collections/hybrid3_dart_collections.dart'
-    as hybrid3_dart_collections;
 
 class Students {
   List<Map<String, String>> people;
@@ -21,8 +19,8 @@ class Students {
     people.add(person);
   }
 
-  void remove(String field) {
-    people.removeWhere((person) => person['first'] == field);
+  void remove(String field, String value) {
+    people.removeWhere((person) => person[field] == value);
   }
 }
 
@@ -63,11 +61,12 @@ void main() {
     "last": "Hutchinson",
     "email": "sammy@gmail.com"
   };
+
   students.plus(addPerson);
   print("\nA new student is added to the list:");
   students.output();
 
-  students.remove("Adesh");
+  students.remove("first", "Adesh");
   print("\nRemoved from the list:");
   students.output();
 }
